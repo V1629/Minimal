@@ -1,4 +1,4 @@
-A multimodel chatbot (text+image)
+A chatbot (text+image)
 After cloning the repo :
 setup : 
 - python -m venv venv
