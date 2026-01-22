@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimodal AI Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- HOME SCREEN -->
+<div class="home-screen" id="home">
+    <h1>🤖 Gemini AI</h1>
+    <button onclick="openText()">📝 Text Query</button>
+    <button onclick="openVision()">🖼️ Vision Query</button>
+</div>
+
+<!-- CHAT SCREEN -->
+<div class="chat-container hidden" id="chat">
+    <header>
+        <span id="mode-title"></span>
+        <button onclick="goHome()">🏠</button>
+    </header>
+
+    <div id="chat-window" class="chat-window"></div>
+
+    <div class="preview-area" id="preview-area">
+        <img id="image-preview">
+        <button id="remove-img">×</button>
+    </div>
+
+    <form id="chat-form" class="input-area">
+        <label id="upload-label" class="upload-btn hidden">
+            📁
+            <input type="file" id="image-input" accept="image/*" hidden>
+        </label>
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
