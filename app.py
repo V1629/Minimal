@@ -30,9 +30,6 @@ def index():
 def text_query():
     text = request.form.get("text")
 
-    if not text:
-        return jsonify({"error": "Text is required"}), 400
-
     message = HumanMessage(content=[{"type": "text", "text": text}])
     response = llm.invoke([message])
 
