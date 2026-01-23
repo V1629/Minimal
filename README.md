@@ -1,4 +1,4 @@
-A chatbot (text+image)
+A chatbot (text+image)<br>
 After cloning the repo :
 setup : 
 - python -m venv venv
